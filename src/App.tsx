@@ -1,12 +1,14 @@
 
+import AlphabetTile from './components/AlphabetTile/AlphabetTile'
 import './index.css'
 
 function App() {
 
   return (
-    <div className='container mx-auto'>
-    <h2 className=' text-2xl text-red-500'>Check</h2>
-    </div>
+    <div className="App">
+
+    <AlphabetTile />
+  </div>
   )
 }
 
