@@ -1,5 +1,6 @@
 
 import AlphabetTile from './components/AlphabetTile/AlphabetTile'
+import Partition from './components/Partition/Partition'
 import './index.css'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <div className="App">
 
+    <Partition/>
     <AlphabetTile />
   </div>
   )
