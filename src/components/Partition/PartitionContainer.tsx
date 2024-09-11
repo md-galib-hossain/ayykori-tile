@@ -1,6 +1,6 @@
 import React from 'react';
 import PartitionTile from './PartitionTile';
-import { PartitionState } from './Partition'; 
+import { PartitionState } from './Partition';
 
 interface PartitionContainerProps {
   partitions: PartitionState[];
@@ -8,9 +8,13 @@ interface PartitionContainerProps {
   removePartition: (id: string) => void;
 }
 
-const PartitionContainer: React.FC<PartitionContainerProps> = ({ partitions, splitPartition, removePartition }) => {
+const PartitionContainer: React.FC<PartitionContainerProps> = ({
+  partitions,
+  splitPartition,
+  removePartition,
+}) => {
   return (
-    <div className="w-full h-full border border-gray-300">
+    <div className="w-full h-full border">
       {partitions.map((partition) => (
         <PartitionTile
           key={partition.id}
